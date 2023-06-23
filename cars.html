@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="cars.html">Cars</a></li>
+    </ul>
+  </div>
+
+  <h1>Cars</h1>
+  <table>
+    <tr>
+      <th>Car Type</th>
+      <th>Manufacturing Date</th>
+      <th>Rental Type</th>
+      <th>Rental Value (including taxes)</th>
+      <th>Image</th>
+    </tr>
+    <tr>
+      <td>Sedan</td>
+      <td>2022</td>
+      <td>Daily</td>
+      <td>150,000 SYP</td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/6/63/2017_Toyota_Camry_%28ASV50R%29_SX_sedan_%282018-11-02%29_01.jpg" onclick="openCarDetails(this.src, 'Sedan', '2022', 'Daily', '150,000 SYP')"></td>
+    </tr>
+    <tr>
+      <td>SUV</td>
+      <td>2021</td>
+      <td>Daily</td>
+      <td>180,000 SYP</td>
+      <td><img src="https://www.forbes.com/wheels/wp-content/uploads/2022/11/Best_Midsize_SUVs_2023_SEO.630.jpg" onclick="openCarDetails(this.src, 'SUV', '2021', 'Daily', '180,000 SYP')"></td>
+    </tr>
+    <tr>
+      <td>Hatchback</td>
+      <td>2020</td>
+      <td>Weekly</td>
+      <td>500,000 SYP</td>
+      <td><img src="https://i.insider.com/622b85878f97ab0018750ff4?width=1000&format=jpeg&auto=webp" onclick="openCarDetails(this.src, 'Hatchback', '2020', 'Weekly', '500,000 SYP')"></td>
+    </tr>
+    <tr>
+      <td>Convertible</td>
+      <td>2021</td>
+      <td>Daily</td>
+      <td>200,000 SYP</td>
+      <td><img src="https://s.yimg.com/ny/api/res/1.2/gOJZxrrftTWVjAR5RoMi8g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQzMA--/https://media.zenfs.com/en/ap.org/de54c6b0b394b4300b00923242ca5534" onclick="openCarDetails(this.src, 'Convertible', '2021', 'Daily', '200,000 SYP')"></td>
+    </tr>
+    <tr>
+      <td>Van</td>
+      <td>2019</td>
+      <td>Daily</td>
+      <td>120,000 SYP</td>
+      <td><img src="https://www.motortrend.com/uploads/2022/01/Winnebago-Industries-e-RV-electric-motorhome-camper-van-Rolling_2.jpg" onclick="openCarDetails(this.src, 'Van', '2019', 'Daily', '120,000 SYP')"></td>
+    </tr>
+    <tr>
+      <td>Sports Car</td>
+      <td>2023</td>
+      <td>Daily</td>
+      <td>300,000 SYP</td>
+      <td><img src="https://imageio.forbes.com/specials-images/imageserve/6064c6802c761b99a89d1f21/0x0.jpg?format=jpg&crop=2375,1336,x0,y120,safe&width=1200" onclick="openCarDetails(this.src, 'Sports Car', '2023', 'Daily', '300,000 SYP')"></td>
+    </tr>
+    <tr>
+      <td>Truck</td>
+      <td>2018</td>
+      <td>Daily</td>
+      <td>250,000 SYP</td>
+      <td><img src="https://cdn.motor1.com/images/mgl/G3y6rA/s3/2022-ford-f-series-super-duty.jpg" onclick="openCarDetails(this.src, 'Truck', '2018', 'Daily', '250,000 SYP')"></td>
+    </tr>
+    <tr>
+      <td>Limousine</td>
+      <td>2022</td>
+      <td>Weekly</td>
+      <td>800,000 SYP</td>
+      <td><img src="https://images.squarespace-cdn.com/content/v1/59a18fe46b8f5be647f23512/1632086698422-H41DO2XM0XSREYSFAUN3/vip-limo-service-rolls-royce-phantom-300-exterior-01-1500.jpg" onclick="openCarDetails(this.src, 'Limousine', '2022', 'Weekly', '800,000 SYP')"></td>
+    </tr>
+    <tr>
+      <td>Electric Car</td>
+      <td>2023</td>
+      <td>Daily</td>
+      <td>180,000 SYP</td>
+      <td><img src="https://media.architecturaldigest.com/photos/5fb4008a3ec62d20cc008aa5/16:9/w_2560%2Cc_limit/lucid-air-exterior-09.jpg" onclick="openCarDetails(this.src, 'Electric Car', '2023', 'Daily', '180,000 SYP')"></td>
+    </tr>
+    <tr>
+      <td>Minivan</td>
+      <td>2021</td>
+      <td>Daily</td>
+      <td>160,000 SYP</td>
+      <td><img src="https://media.ed.edmunds-media.com/chrysler/pacifica/2023/oem/2023_chrysler_pacifica_passenger-minivan_hybrid-pinnacle_fq_oem_1_1600.jpg" onclick="openCarDetails(this.src, 'Minivan', '2021', 'Daily', '160,000 SYP')"></td>
+    </tr>
+    <!-- Add more cars here -->
+  </table>
+  <script src="myFunctions.js"></script>
+</body>
+</html>

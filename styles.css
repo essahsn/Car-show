@@ -1,0 +1,153 @@
+/* CSS Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info {
+    margin-top: 30px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .navbar li {
+    margin-right: 10px;
+  }
+  
+  .navbar li a {
+    color: blue;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .navbar li a:hover {
+    background-color: rgba(0, 60, 255, 0.171);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .car-details {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .car-details img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .form-container label,
+  .form-container input,
+  .form-container button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-container button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+  }
+  img{
+    width: 100px;
+    cursor: pointer;
+  }
+  form div{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .capcha{
+    justify-content: space-between;
+    margin: auto;
+  }
+  .capcha label{
+    justify-content: space-between;
+    margin: auto;
+  }
+  .capcha span{
+    justify-content: space-between;
+    margin: auto;
+  }

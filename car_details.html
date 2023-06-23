@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Details</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <h1>Car Details</h1>
+
+  <!-- Display Car Details -->
+  <div class="car-details">
+    <table>
+      <tr>
+        <th>Car Type</th>
+        <td id="carType"></td>
+      </tr>
+      <tr>
+        <th>Manufacturing Date</th>
+        <td id="manufacturingDate"></td>
+      </tr>
+      <tr>
+        <th>Rental Type</th>
+        <td id="rentalType"></td>
+      </tr>
+      <tr>
+        <th>Rental Value (including taxes)</th>
+        <td id="rentalValue"></td>
+      </tr>
+    </table>
+
+    <!-- Additional Images (if available) -->
+    <h2>Additional Images</h2>
+    <div id="additionalImages"></div>
+
+    <!-- Rental Value Calculation -->
+    <h2>Rental Value Calculation</h2>
+    <table>
+      <tr>
+        <th>Daily Rental</th>
+        <td id="dailyRental"></td>
+      </tr>
+      <tr>
+        <th>Reconstruction Fee (1%)</th>
+        <td id="reconstructionFee"></td>
+      </tr>
+      <tr>
+        <th>Tax (5% of the rental value)</th>
+        <td id="tax"></td>
+      </tr>
+    </table>
+
+    <!-- Cancel Button -->
+    <button onclick="cancel()">Cancel</button>
+  </div>
+
+  <!-- Checkbox and Form -->
+  <h2>Request Car</h2>
+  <div style="text-align: center;">
+    <input type="checkbox" id="proceedCheckbox" onchange="toggleForm()">
+    <label for="proceedCheckbox">Proceed</label>
+  </div>
+
+  <div class="form-container">
+    <form id="requestForm" style="display: none;">
+      <div>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required>
+      </div>
+      <div>
+        <label for="nationalID">National ID:</label>
+        <input type="text" id="nationalID" required>
+      </div>
+      <div>
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" required>
+      </div>
+      <div>
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="text" id="mobileNumber" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div>
+        <label for="duration">Duration (days, weeks, or months):</label>
+        <input type="text" id="duration" required>
+      </div>
+      <div class="capcha">
+        <label for="captchaInput">Captcha Code:</label>
+        <input type="text" id="captchaInput" required>
+        <span id="captchaCode"></span>
+        <button type="button" onclick="generateCaptcha()">Generate New Code</button>
+      </div>
+      <div>
+        <button type="submit" onclick="submitRequest(event)">Submit Request</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="myFunctions.js"></script>
+
+</body>
+</html>
